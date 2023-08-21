@@ -87,3 +87,87 @@ At convergence,
 ● Optimal policy: follows the best action - argmax_a Q*(s,a)
 
 ● Value: V(s) = max_a Q*(s,a)
+
+## Project 4
+
+[Watch the video](https://youtu.be/UelQOT2ySuU)
+
+### Gomoku
+
+**Motivation for MCTS (Monte Carlo Tree Search)** 
+Resource: Computational Budget
+
+- The algorithm must run within a reasonable time frame to be practical.
+- MCTS offers scalability.
+
+**Basic Idea:** Only search the promising parts of the game tree within a computational budget. We need to be smart about what we choose to search.
+
+```python
+function MCTS(S_root)
+  // Simulate and Learn
+  while within computational budget do
+    s ← TreePolicy(s_root) // Selection & Expansion
+    winner ← DefaultPolicy(s) // Simulation
+    Backup(s, winner) // Backpropagation
+  end while
+
+  // Inference, Make the Best Known Decision
+  return Action(argmax_{s'}E children(s_root)(Q(s')/N(s')))
+end function
+```
+
+One Iteration → Selection → Expansion → Simulation → Backpropagation
+
+- **Selection:** Traverse down to a node with untried actions using the best-known policy we have and the exploration term.
+- **Expansion:** If a node has untried actions, we expand it and add them as children.
+- **Simulation:** Play until the game terminates using a default policy (in this case, random moves).
+- **Backpropagation:** Go back up the tree and update nodes.
+
+Absolutely, here's the Markdown code with improved readability and formatting:
+
+
+## Project 5
+
+[Watch the video](https://youtu.be/ANLkX4Uyhaw)
+
+### Sudoku
+
+**Rules:** Peers (those in the same row/column/block) cannot have the same value.
+
+**Basic Idea:** After making a decision (or guess), propagate using arc-consistency.
+
+**Code:**
+
+```python
+sigma, Domains ← Propagate(C, sigma, D) // Propagate using arc-consistency
+
+if Conflict E/ sigma then
+   if AllAssigned(sigma) then
+      return Solution(sigma) // Solved, return the full assignment in solution format
+   else
+      sigma, x ← MakeDecision(C, sigma, D) // Assign a value to an unassigned variable
+      stack ← stack.push(sigma, x, D) // Create a backtracking point
+   end if
+else
+   if stack == empty then
+      return NoSolution // Backtrack to the latest decision
+   end if
+end if
+```
+
+**Propagate:**
+1. Assign values to all spots that have only one value in their domains.
+2. If a spot has been assigned, update its domain.
+3. If there's no value in the domain, it must be a conflict, so step out of the propagate function.
+4. If there are any inconsistent pairs, prune the domain:
+   - D(x₁) and D(x₂) are not arc-consistent only when:
+     - x₁ and x₂ are peers.
+     - D(x₂) has only one element, i.e., D(x₂)={a}.
+     - D(x₁) contains that element, i.e., a E D(x₁).
+
+**Make a Decision:** Guess a value from its domain.
+
+**Backtracking:** When encountering a conflict, go back to the latest guess and remove it.
+
+Repeat these steps until it returns a solution or "NoSolution."
+
