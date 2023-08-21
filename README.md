@@ -41,7 +41,7 @@ This tree represents all the game states of a player-computer-player sequence (t
 The payoff is the sum of all numbers. 
 
 ## Project 3
-[Watch the video]((https://youtu.be/gDzzhPBbXKk))
+[Watch the video](https://youtu.be/gDzzhPBbXKk)
 
 ### Policy Evaluation: 
 Learning Values of a policy: Given a policy, evaluate how good (or bad) it is.
@@ -85,4 +85,5 @@ update formula:
 
 At convergence,
 ● Optimal policy: follows the best action - argmax_a Q*(s,a)
+
 ● Value: V(s) = max_a Q*(s,a)
