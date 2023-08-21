@@ -3,7 +3,9 @@ UCSD CSE 150B artificial intelligence
 - all projects is coded in Python
 
 ## Project 1
-[Watch the video](https://youtu.be/kFo-3NDZInM)
+[![Watch the video](https://i9.ytimg.com/vi/kFo-3NDZInM/mqdefault.jpg?sqp=CIy_j6cG-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGBYgZSg3MA8=&rs=AOn4CLCfOd79D7Tt__l601IuaGrLx5yvtw)](https://youtu.be/kFo-3NDZInM)
+
+<!---[Watch the video](https://youtu.be/kFo-3NDZInM)--->
 1. **DFS (Depth-First Search)**:
    Imagine exploring a maze by delving as far as possible down a path before retracing your steps. You keep choosing unexplored paths until you hit a dead end, and then you backtrack a bit to try another path. It's like descending deep into a tree and then coming back up.
 
@@ -25,7 +27,9 @@ UCSD CSE 150B artificial intelligence
      Uses Priority Queue + heuristic
 
 ## Project 2
-[Watch the video](https://youtu.be/ZeCWr1Sipyk)
+[![Watch the video](https://i9.ytimg.com/vi/ZeCWr1Sipyk/mqdefault.jpg?sqp=CIy_j6cG-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGBMgUyh_MA8=&rs=AOn4CLDRz1JbUWQQXibLXsIEeGpjTh8j7A)](https://youtu.be/ZeCWr1Sipyk)
+
+<!--- [Watch the video](https://youtu.be/ZeCWr1Sipyk) --->
 
 **Using expectimax tree**
 
@@ -41,7 +45,9 @@ This tree represents all the game states of a player-computer-player sequence (t
 The payoff is the sum of all numbers. 
 
 ## Project 3
-[Watch the video](https://youtu.be/gDzzhPBbXKk)
+[![Watch the video](https://i9.ytimg.com/vi/gDzzhPBbXKk/mqdefault.jpg?sqp=CIy_j6cG-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGBMgSyh_MA8=&rs=AOn4CLDIwCyoC-3PWWkHt7_brLezKywxWQ)](https://youtu.be/gDzzhPBbXKk)
+
+<!---[Watch the video](https://youtu.be/gDzzhPBbXKk)--->
 
 ### Policy Evaluation: 
 Learning Values of a policy: Given a policy, evaluate how good (or bad) it is.
@@ -89,8 +95,9 @@ At convergence,
 ● Value: V(s) = max_a Q*(s,a)
 
 ## Project 4
+[![Watch the video](https://i9.ytimg.com/vi/UelQOT2ySuU/mqdefault.jpg?sqp=CIy_j6cG-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGGUgTyhDMA8=&rs=AOn4CLC2borY9CjgsT8hsmB9Cf86PEKFug)](https://youtu.be/UelQOT2ySuU)
 
-[Watch the video](https://youtu.be/UelQOT2ySuU)
+<!--- [Watch the video](https://youtu.be/UelQOT2ySuU) --->
 
 ### Gomoku
 
@@ -128,8 +135,9 @@ Absolutely, here's the Markdown code with improved readability and formatting:
 
 ## Project 5
 
-[Watch the video](https://youtu.be/ANLkX4Uyhaw)
+[![Watch the video](https://i9.ytimg.com/vi/ANLkX4Uyhaw/mqdefault.jpg?sqp=CIy_j6cG-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGEIgXyhyMA8=&rs=AOn4CLBIO9n5DoWn-l25JM-ONMdQ6mH6Vw)](https://youtu.be/ANLkX4Uyhaw)
 
+<!---[Watch the video](https://youtu.be/ANLkX4Uyhaw) --->
 ### Sudoku
 
 **Rules:** Peers (those in the same row/column/block) cannot have the same value.
