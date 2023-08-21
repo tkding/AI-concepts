@@ -1,6 +1,18 @@
 # AI-concepts
-UCSD CSE 150B artificial intelligence
-- all projects is coded in Python
+
+Welcome to the AI Concepts repository for UCSD CSE 150B Artificial Intelligence course.
+
+This repository is dedicated to exploring various concepts in the field of artificial intelligence. Please note that due to class restrictions, specific project code cannot be provided to prevent any AI violations.
+
+## Course Details
+
+- Course: UCSD CSE 150B Artificial Intelligence: Search and Reasoning
+- Language: Python
+
+
+As you explore the repository, you'll find a collection of projects and resources that delve into these concepts. Each project showcases how these AI techniques can be applied to real-world problems.
+
+
 
 ## Project 1
 [![Watch the video](https://i9.ytimg.com/vi/kFo-3NDZInM/mqdefault.jpg?sqp=CIy_j6cG-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGBYgZSg3MA8=&rs=AOn4CLCfOd79D7Tt__l601IuaGrLx5yvtw)](https://youtu.be/kFo-3NDZInM)
